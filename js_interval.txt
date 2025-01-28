@@ -1,0 +1,12 @@
+    const salas = document.querySelectorAll(".sala .imagens");
+
+    salas.forEach(sala => {
+        let imagens = sala.querySelectorAll("img");
+        let index = 0;
+
+        setInterval(() => {
+            imagens[index].style.display = "none";
+            index = (index + 1) % imagens.length;
+            imagens[index].style.display = "block";
+        }, 3000);
+    });

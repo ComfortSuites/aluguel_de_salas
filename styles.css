@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* fundo claro */
+    text-align: center;
+}
+
+header {
+    background-color: #01135f; /* Cor da logo */
+    color: #ffffff; /* Cor do texto da logo */
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.salas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sala {
+    background: #ffffff; /* Fundo branco para as salas */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.imagens img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.imagens img:hover {
+    transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+.informacoes {
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.botao-reserva {
+    display: inline-block;
+    background-color: #ff5f04; /* Cor do botão */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 5px;
+}
+
+.botao-reserva:hover {
+    background-color: #01135f; /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .salas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens img {
+        height: 150px;
+        margin-bottom: 5px;
+    }
+}
